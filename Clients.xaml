@@ -1,0 +1,39 @@
+﻿<Window x:Class="APPBDHostel.Clients" Icon="/Source/HotelIco.png"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:APPBDHostel"
+        mc:Ignorable="d"
+        Title="Clients" Height="500" Width="700" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Topmost="True" IsTabStop="True">
+    <Grid>
+        <Rectangle Width="125" HorizontalAlignment="Left">
+            <Rectangle.Effect>
+                <DropShadowEffect ShadowDepth="3" BlurRadius="2" Color="#FF28C3E7" Direction="0" RenderingBias="Performance"/>
+            </Rectangle.Effect>
+            <Rectangle.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF50E0CC"/>
+                    <GradientStop Color="#FF21BEEC" Offset="1"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Frame x:Name="MainFrame" Width="567" HorizontalAlignment="Center" VerticalAlignment="Bottom" Height="425" Margin="125,38,2,0"/>
+        <StackPanel x:Name="Tools" Orientation="Vertical">
+            <Image Source="G:\Icons\HotelIco.png" Height="80" Width="80" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="24,0,0,0"/>
+            <TextBlock Text="Редактирование" Height="24" TextAlignment="Center" Width="111" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="7,0,0,0" Foreground="White" FontSize="14" FontFamily="Times New Roman" FontStretch="Normal" FontWeight="SemiBold"/>
+            <TextBlock Text="Clients" Margin="7,-8,0,0" Width="111" HorizontalAlignment="Left"  VerticalAlignment="Top" Foreground="White" FontSize="14" FontFamily="Times New Roman" TextAlignment="Center"/>
+            <Button Content="Back" Width="110" Height="40" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="7,315,0,0" Padding="1" FontSize="18" UseLayoutRounding="True" FontFamily="Times New Roman" BorderThickness="2" Click="Button_Click_Back" Foreground="White" FontWeight="Thin">
+                <Button.BorderBrush>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF1720A2" Offset="0"/>
+                        <GradientStop Color="#FF19D8F6" Offset="1"/>
+                    </LinearGradientBrush>
+                </Button.BorderBrush>
+                <Button.Background>
+                    <SolidColorBrush Color="Black" Opacity="0.25"/>
+                </Button.Background>
+            </Button>
+        </StackPanel>
+    </Grid>
+</Window>
